@@ -14,6 +14,13 @@
 		5D1C84601BADAC45009DBC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C845E1BADAC45009DBC9D /* LaunchScreen.storyboard */; };
 		5D1C846B1BADAC45009DBC9D /* Loteri_aTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C846A1BADAC45009DBC9D /* Loteri_aTests.swift */; };
 		5D1C84761BADAC45009DBC9D /* Loteri_aUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C84751BADAC45009DBC9D /* Loteri_aUITests.swift */; };
+		5D46CED31BADF2AA00E6FC10 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D46CED21BADF2AA00E6FC10 /* PlayerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5D46CED51BAE048000E6FC10 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D46CED41BAE048000E6FC10 /* banana.png */; settings = {ASSET_TAGS = (); }; };
+		5DC91C031BAE250500129C29 /* Bueno.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC91BFE1BAE250500129C29 /* Bueno.png */; settings = {ASSET_TAGS = (); }; };
+		5DC91C041BAE250500129C29 /* Chomp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC91BFF1BAE250500129C29 /* Chomp.png */; settings = {ASSET_TAGS = (); }; };
+		5DC91C051BAE250500129C29 /* Crunch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC91C001BAE250500129C29 /* Crunch.png */; settings = {ASSET_TAGS = (); }; };
+		5DC91C061BAE250500129C29 /* Crunchie.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC91C011BAE250500129C29 /* Crunchie.png */; settings = {ASSET_TAGS = (); }; };
+		5DC91C071BAE250500129C29 /* Lindt.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC91C021BAE250500129C29 /* Lindt.png */; settings = {ASSET_TAGS = (); }; };
 		5DE54B761BADCA1100689644 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE54B741BADCA1100689644 /* background.png */; settings = {ASSET_TAGS = (); }; };
 		5DE54B7B1BADCE4900689644 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE54B7A1BADCE4900689644 /* icon.png */; settings = {ASSET_TAGS = (); }; };
 		5DE54B7D1BADD34200689644 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE54B7C1BADD34200689644 /* CategoriesViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -51,6 +58,13 @@
 		5D1C84711BADAC45009DBC9D /* LoteríaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoteríaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C84751BADAC45009DBC9D /* Loteri_aUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loteri_aUITests.swift; sourceTree = "<group>"; };
 		5D1C84771BADAC45009DBC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D46CED21BADF2AA00E6FC10 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		5D46CED41BAE048000E6FC10 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		5DC91BFE1BAE250500129C29 /* Bueno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bueno.png; sourceTree = "<group>"; };
+		5DC91BFF1BAE250500129C29 /* Chomp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chomp.png; sourceTree = "<group>"; };
+		5DC91C001BAE250500129C29 /* Crunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crunch.png; sourceTree = "<group>"; };
+		5DC91C011BAE250500129C29 /* Crunchie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crunchie.png; sourceTree = "<group>"; };
+		5DC91C021BAE250500129C29 /* Lindt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lindt.png; sourceTree = "<group>"; };
 		5DE54B741BADCA1100689644 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		5DE54B7A1BADCE4900689644 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5DE54B7C1BADD34200689644 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -108,13 +122,13 @@
 				5D1C84551BADAC45009DBC9D /* AppDelegate.swift */,
 				5D1C84571BADAC45009DBC9D /* ViewController.swift */,
 				5DE54B7C1BADD34200689644 /* CategoriesViewController.swift */,
-				5D1C84591BADAC45009DBC9D /* Main.storyboard */,
+				5D46CED21BADF2AA00E6FC10 /* PlayerViewController.swift */,
 				5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */,
+				5D1C84591BADAC45009DBC9D /* Main.storyboard */,
 				5D1C845C1BADAC45009DBC9D /* Assets.xcassets */,
 				5D1C845E1BADAC45009DBC9D /* LaunchScreen.storyboard */,
 				5D1C84611BADAC45009DBC9D /* Info.plist */,
-				5DE54B741BADCA1100689644 /* background.png */,
-				5DE54B7A1BADCE4900689644 /* icon.png */,
+				5D46CED61BAE048500E6FC10 /* Images */,
 			);
 			path = "Lotería";
 			sourceTree = "<group>";
@@ -135,6 +149,21 @@
 				5D1C84771BADAC45009DBC9D /* Info.plist */,
 			);
 			path = "LoteríaUITests";
+			sourceTree = "<group>";
+		};
+		5D46CED61BAE048500E6FC10 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5DE54B7A1BADCE4900689644 /* icon.png */,
+				5DE54B741BADCA1100689644 /* background.png */,
+				5D46CED41BAE048000E6FC10 /* banana.png */,
+				5DC91BFE1BAE250500129C29 /* Bueno.png */,
+				5DC91BFF1BAE250500129C29 /* Chomp.png */,
+				5DC91C001BAE250500129C29 /* Crunch.png */,
+				5DC91C011BAE250500129C29 /* Crunchie.png */,
+				5DC91C021BAE250500129C29 /* Lindt.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +271,14 @@
 			files = (
 				5D1C84601BADAC45009DBC9D /* LaunchScreen.storyboard in Resources */,
 				5DE54B7B1BADCE4900689644 /* icon.png in Resources */,
+				5D46CED51BAE048000E6FC10 /* banana.png in Resources */,
+				5DC91C041BAE250500129C29 /* Chomp.png in Resources */,
+				5DC91C031BAE250500129C29 /* Bueno.png in Resources */,
+				5DC91C071BAE250500129C29 /* Lindt.png in Resources */,
 				5DE54B761BADCA1100689644 /* background.png in Resources */,
+				5DC91C051BAE250500129C29 /* Crunch.png in Resources */,
 				5D1C845D1BADAC45009DBC9D /* Assets.xcassets in Resources */,
+				5DC91C061BAE250500129C29 /* Crunchie.png in Resources */,
 				5D1C845B1BADAC45009DBC9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +308,7 @@
 				5DE54B7F1BADDD5800689644 /* VoiceViewController.swift in Sources */,
 				5D1C84561BADAC45009DBC9D /* AppDelegate.swift in Sources */,
 				5DE54B7D1BADD34200689644 /* CategoriesViewController.swift in Sources */,
+				5D46CED31BADF2AA00E6FC10 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
