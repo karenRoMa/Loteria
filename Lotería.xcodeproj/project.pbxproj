@@ -14,6 +14,10 @@
 		5D1C84601BADAC45009DBC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C845E1BADAC45009DBC9D /* LaunchScreen.storyboard */; };
 		5D1C846B1BADAC45009DBC9D /* Loteri_aTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C846A1BADAC45009DBC9D /* Loteri_aTests.swift */; };
 		5D1C84761BADAC45009DBC9D /* Loteri_aUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C84751BADAC45009DBC9D /* Loteri_aUITests.swift */; };
+		5DE54B761BADCA1100689644 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE54B741BADCA1100689644 /* background.png */; settings = {ASSET_TAGS = (); }; };
+		5DE54B7B1BADCE4900689644 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE54B7A1BADCE4900689644 /* icon.png */; settings = {ASSET_TAGS = (); }; };
+		5DE54B7D1BADD34200689644 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE54B7C1BADD34200689644 /* CategoriesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5DE54B7F1BADDD5800689644 /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		5D1C84711BADAC45009DBC9D /* LoteríaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoteríaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C84751BADAC45009DBC9D /* Loteri_aUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loteri_aUITests.swift; sourceTree = "<group>"; };
 		5D1C84771BADAC45009DBC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DE54B741BADCA1100689644 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		5DE54B7A1BADCE4900689644 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5DE54B7C1BADD34200689644 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = SOURCE_ROOT; };
+		5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,14 @@
 			children = (
 				5D1C84551BADAC45009DBC9D /* AppDelegate.swift */,
 				5D1C84571BADAC45009DBC9D /* ViewController.swift */,
+				5DE54B7C1BADD34200689644 /* CategoriesViewController.swift */,
 				5D1C84591BADAC45009DBC9D /* Main.storyboard */,
+				5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */,
 				5D1C845C1BADAC45009DBC9D /* Assets.xcassets */,
 				5D1C845E1BADAC45009DBC9D /* LaunchScreen.storyboard */,
 				5D1C84611BADAC45009DBC9D /* Info.plist */,
+				5DE54B741BADCA1100689644 /* background.png */,
+				5DE54B7A1BADCE4900689644 /* icon.png */,
 			);
 			path = "Lotería";
 			sourceTree = "<group>";
@@ -229,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1C84601BADAC45009DBC9D /* LaunchScreen.storyboard in Resources */,
+				5DE54B7B1BADCE4900689644 /* icon.png in Resources */,
+				5DE54B761BADCA1100689644 /* background.png in Resources */,
 				5D1C845D1BADAC45009DBC9D /* Assets.xcassets in Resources */,
 				5D1C845B1BADAC45009DBC9D /* Main.storyboard in Resources */,
 			);
@@ -256,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1C84581BADAC45009DBC9D /* ViewController.swift in Sources */,
+				5DE54B7F1BADDD5800689644 /* VoiceViewController.swift in Sources */,
 				5D1C84561BADAC45009DBC9D /* AppDelegate.swift in Sources */,
+				5DE54B7D1BADD34200689644 /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +497,7 @@
 				5D1C847C1BADAC45009DBC9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D1C847D1BADAC45009DBC9D /* Build configuration list for PBXNativeTarget "LoteríaTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +506,7 @@
 				5D1C847F1BADAC45009DBC9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D1C84801BADAC45009DBC9D /* Build configuration list for PBXNativeTarget "LoteríaUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +515,7 @@
 				5D1C84821BADAC45009DBC9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
