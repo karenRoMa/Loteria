@@ -20,6 +20,7 @@ class VoiceViewController: UIViewController {
     let synth = AVSpeechSynthesizer()
     var textToVoice: String?
     var myUtterance = AVSpeechUtterance(string: "")
+    var numberOfElements: Int!
     @IBOutlet weak var VoiceImage: UIImageView!
     @IBOutlet weak var PauseButtonOutlet: UIButton!
     @IBOutlet weak var phrase: UILabel!
@@ -27,9 +28,9 @@ class VoiceViewController: UIViewController {
     var timer = NSTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "changeImage", userInfo: nil, repeats: true)
-        self.navigationItem.title = "EL GRITÓN"
-        i = 0 + Int(arc4random_uniform(UInt32(61)))
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "changeImage", userInfo: nil, repeats: true)
+        self.navigationItem.title = "MODERADOR"
+        i = 0 + Int(arc4random_uniform(UInt32(numberOfElements)))
         n = CategoriesArrayOfImages.count
         HavePased = []
         VoiceImage.image = UIImage(named: CategoriesArrayOfImages[i])
@@ -57,12 +58,12 @@ class VoiceViewController: UIViewController {
     
     func changeImage(){
         if Light == "ON"{
-            while HavePased.contains(CategoriesArrayOfImages[i]) == true{
-                i = 0 + Int(arc4random_uniform(UInt32(60)))
+            while HavePasedImages.contains(CategoriesArrayOfImages[i]) == true{
+                i = 0 + Int(arc4random_uniform(UInt32(numberOfElements)))
             }
                 textToVoice = CategoriesArrayOfImages[i].stringByReplacingOccurrencesOfString(".jpg", withString: "")
                 myUtterance = AVSpeechUtterance(string: textToVoice!)
-                myUtterance.rate = 1
+                myUtterance.rate = 0.3
                 synth.speakUtterance(myUtterance)
                 VoiceImage.image = UIImage(named:CategoriesArrayOfImages[i])
                 HavePased += Array(arrayLiteral: textToVoice!)
