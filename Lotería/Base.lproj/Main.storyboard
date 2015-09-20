@@ -48,7 +48,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   ELIGE TU ROL EN EL JUEGO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fES-ab-HPs">
                                         <rect key="frame" x="0.0" y="30" width="600" height="19"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -145,40 +145,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYI-v6-CNU">
-                                <rect key="frame" x="0.0" y="118" width="600" height="482"/>
+                                <rect key="frame" x="0.0" y="122" width="600" height="354"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rym-bu-wKN">
-                                        <rect key="frame" x="143" y="83" width="315" height="315"/>
+                                        <rect key="frame" x="143" y="19" width="315" height="315"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="315" id="uVu-f0-adE"/>
+                                            <constraint firstAttribute="width" constant="315" id="8MH-zL-xDl"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="rym-bu-wKN" firstAttribute="centerY" secondItem="PYI-v6-CNU" secondAttribute="centerY" id="OGA-wj-tsI"/>
-                                    <constraint firstItem="rym-bu-wKN" firstAttribute="top" secondItem="PYI-v6-CNU" secondAttribute="top" constant="83" id="hhB-v4-41u"/>
-                                    <constraint firstItem="rym-bu-wKN" firstAttribute="centerX" secondItem="PYI-v6-CNU" secondAttribute="centerX" id="uLS-v7-aNH"/>
+                                    <constraint firstItem="rym-bu-wKN" firstAttribute="centerX" secondItem="PYI-v6-CNU" secondAttribute="centerX" id="B0c-1I-4az"/>
+                                    <constraint firstItem="rym-bu-wKN" firstAttribute="top" secondItem="PYI-v6-CNU" secondAttribute="top" constant="19" id="bSy-Np-Fb3"/>
+                                    <constraint firstItem="rym-bu-wKN" firstAttribute="centerY" secondItem="PYI-v6-CNU" secondAttribute="centerY" id="hcR-2V-XUt"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Se va y se corre con la vieja del pozóle!”" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxu-5R-j8V">
                                 <rect key="frame" x="20" y="84" width="258" height="20"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfq-Tz-r3M">
+                                <rect key="frame" x="206" y="473" width="64" height="64"/>
+                                <state key="normal" image="play.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartButton:" destination="2lm-Ec-xQ3" eventType="touchUpInside" id="uXe-QD-yCA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc2-fE-Kwf">
+                                <rect key="frame" x="355" y="473" width="64" height="64"/>
+                                <state key="normal" image="pause.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PauseButton:" destination="2lm-Ec-xQ3" eventType="touchUpInside" id="RCD-Ih-7a1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PYI-v6-CNU" firstAttribute="top" secondItem="yP7-3G-eh1" secondAttribute="top" constant="118" id="NQK-82-SyX"/>
-                            <constraint firstItem="PYI-v6-CNU" firstAttribute="top" secondItem="Wxu-5R-j8V" secondAttribute="bottom" constant="14" id="RCH-4Z-TPE"/>
+                            <constraint firstItem="tfq-Tz-r3M" firstAttribute="centerX" secondItem="yP7-3G-eh1" secondAttribute="centerX" constant="-62" id="BXF-xe-wBf"/>
+                            <constraint firstItem="PYI-v6-CNU" firstAttribute="top" secondItem="yP7-3G-eh1" secondAttribute="top" constant="122" id="NQK-82-SyX"/>
+                            <constraint firstItem="PYI-v6-CNU" firstAttribute="top" secondItem="Wxu-5R-j8V" secondAttribute="bottom" constant="18" id="RCH-4Z-TPE"/>
                             <constraint firstItem="Wxu-5R-j8V" firstAttribute="leading" secondItem="yP7-3G-eh1" secondAttribute="leadingMargin" id="UqC-EZ-iCj"/>
-                            <constraint firstItem="PYI-v6-CNU" firstAttribute="bottom" secondItem="3aS-ER-PmO" secondAttribute="top" id="gnd-Oj-Ick"/>
+                            <constraint firstItem="PYI-v6-CNU" firstAttribute="bottom" secondItem="3aS-ER-PmO" secondAttribute="top" constant="-124" id="gnd-Oj-Ick"/>
+                            <constraint firstItem="bc2-fE-Kwf" firstAttribute="leading" secondItem="tfq-Tz-r3M" secondAttribute="trailing" constant="85" id="kOS-Bx-IQq"/>
                             <constraint firstItem="PYI-v6-CNU" firstAttribute="leading" secondItem="yP7-3G-eh1" secondAttribute="leading" id="pOT-HW-Kk4"/>
                             <constraint firstAttribute="trailing" secondItem="PYI-v6-CNU" secondAttribute="trailing" id="vYJ-ev-pGD"/>
+                            <constraint firstItem="tfq-Tz-r3M" firstAttribute="top" secondItem="rym-bu-wKN" secondAttribute="bottom" constant="17" id="wlb-xS-uM6"/>
+                            <constraint firstItem="bc2-fE-Kwf" firstAttribute="top" secondItem="rym-bu-wKN" secondAttribute="bottom" constant="17" id="zGK-J5-SAO"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="PauseButtonOutlet" destination="bc2-fE-Kwf" id="e4v-nv-b4M"/>
+                        <outlet property="StartButtonOutlet" destination="tfq-Tz-r3M" id="VWi-2c-J8P"/>
                         <outlet property="VoiceImage" destination="rym-bu-wKN" id="7j4-7L-6Rh"/>
                     </connections>
                 </viewController>
@@ -226,6 +250,8 @@
     <resources>
         <image name="background.png" width="1667" height="1667"/>
         <image name="icon.png" width="692" height="892"/>
+        <image name="pause.png" width="64" height="64"/>
+        <image name="play.png" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nBI-t3-f9v"/>

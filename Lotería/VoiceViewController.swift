@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class VoiceViewController: UIViewController {
     
@@ -14,11 +15,18 @@ class VoiceViewController: UIViewController {
     var i: Int = 1
     var n: Int = 0
     var HavePased: [String] = []
+    var Light: String?
+    let synth = AVSpeechSynthesizer()
+    var textToVoice: String?
+    var myUtterance = AVSpeechUtterance(string: "")
     @IBOutlet weak var VoiceImage: UIImageView!
+    @IBOutlet weak var PauseButtonOutlet: UIButton!
+    @IBOutlet weak var phrase: UILabel!
+    @IBOutlet weak var StartButtonOutlet: UIButton!
     var timer = NSTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "changeImage", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "changeImage", userInfo: nil, repeats: true)
         self.navigationItem.title = "EL GRITÓN"
         i = 0
         n = CategoriesArrayOfImages.count
@@ -30,10 +38,32 @@ class VoiceViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func StartButton(sender: AnyObject) {
+        Light = "ON"
+        StartButtonOutlet.highlighted = true
+        StartButtonOutlet.enabled = false
+        PauseButtonOutlet.highlighted = false
+        PauseButtonOutlet.enabled = true
+    }
+
+    @IBAction func PauseButton(sender: AnyObject) {
+        Light = "OFF"
+        PauseButtonOutlet.highlighted = true
+        PauseButtonOutlet.enabled = false
+        StartButtonOutlet.highlighted = false
+        StartButtonOutlet.enabled = true
+    }
+    
     func changeImage(){
-        if i<n {
-        VoiceImage.image = UIImage(named: CategoriesArrayOfImages[i])
-        i=i+1
+        if Light == "ON"{
+            if i<n {
+                textToVoice = CategoriesArrayOfImages[i].stringByReplacingOccurrencesOfString(".jpg", withString: "")
+                myUtterance = AVSpeechUtterance(string: textToVoice!)
+                myUtterance.rate = 0.3
+                synth.speakUtterance(myUtterance)
+                VoiceImage.image = UIImage(named:CategoriesArrayOfImages[i])
+                i=i+1
+            }
         }
     }
 }

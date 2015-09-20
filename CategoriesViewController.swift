@@ -12,7 +12,6 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBOutlet weak var Categories: UITableView!
     var CategoriesArray: [String] = []
-    var CategoriesArrayOfImagesVerbs: [String] = []
     var CategoriesArrayOfImagesObjects: [String] = []
     var CategoriesArrayOfImagesFruitsColors: [String] = []
     var option: Int!
@@ -22,10 +21,9 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         self.Categories.delegate = self
         self.Categories.dataSource = self
         self.navigationItem.title = "CATEGORÍAS"
-        CategoriesArray = ["Verbos","Objetos","Colores y Frutas"]
-        CategoriesArrayOfImagesVerbs = []
-        CategoriesArrayOfImagesObjects = []
-        CategoriesArrayOfImagesFruitsColors = ["banana.png","Bueno.png","Chomp.png","Crunch.png","Crunchie.png","Lindt.png"]
+        CategoriesArray = ["Objetos","Colores y Frutas"]
+        CategoriesArrayOfImagesObjects = ["backpack.jpg", "ball.jpg", "bell.jpg", "bicycle.jpg", "books.jpg", "boot.jpg", "brush.jpg", "bucketpaint.jpg", "camera.jpg", "cap.jpg", "car.jpg", "carrot.jpg", "cheese.jpg", "cloud.jpg", "computer.jpg", "couch.jpg", "drink.jpg", "duck.jpg", "factory.jpg", "fire.jpg", "flower.jpg", "footprint.jpg", "fork.jpg", "fridge.jpg", "gift.jpg", "glasses.jpg", "guitar.jpg", "hammer.jpg", "heart.jpg", "house.jpg", "jacket.jpg", "map.jpg", "microphone.jpg", "moustache.jpg", "music.jpg", "paintbrush.jpg", "pen.jpg", "pencil.jpg", "phone.jpg", "purse.jpg", "radio.jpg", "rocket.jpg", "rulerjpg", "scissors.jpg", "screen.jpg", "shirt.jpg", "shoe.jpg", "short.jpg", "skirt.jpg", "sock.jpg", "star.jpg", "sun.jpg", "t-shirt.jpg", "tie.jpg", "tree.jpg", "troussers.jpg", "truck.jpg", "umbrella.jpg", "wallet.jpg", "weather.jpg"]
+        CategoriesArrayOfImagesFruitsColors = [""]
         
     }
 
@@ -61,8 +59,6 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         if option == 1{
             var anotherNextView = segue.destinationViewController as! VoiceViewController
             switch optionCategory{
-                case "Verbos":
-                anotherNextView.CategoriesArrayOfImages = CategoriesArrayOfImagesVerbs
                 case "Objetos":
                 anotherNextView.CategoriesArrayOfImages = CategoriesArrayOfImagesObjects
                 case "Colores y Frutas":
