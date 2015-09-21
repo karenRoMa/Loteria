@@ -34,6 +34,7 @@ class VoiceViewController: UIViewController {
         n = CategoriesArrayOfImages.count
         HavePased = []
         VoiceImage.image = UIImage(named: CategoriesArrayOfImages[i])
+        synth
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +65,7 @@ class VoiceViewController: UIViewController {
                 textToVoice = CategoriesArrayOfImages[i].stringByReplacingOccurrencesOfString(".jpg", withString: "")
                 myUtterance = AVSpeechUtterance(string: textToVoice!)
                 myUtterance.rate = 0.3
+                myUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
                 synth.speakUtterance(myUtterance)
                 VoiceImage.image = UIImage(named:CategoriesArrayOfImages[i])
                 HavePased += Array(arrayLiteral: textToVoice!)
