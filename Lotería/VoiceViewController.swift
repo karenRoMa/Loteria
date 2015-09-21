@@ -70,5 +70,18 @@ class VoiceViewController: UIViewController {
                 HavePasedImages += Array(arrayLiteral: CategoriesArrayOfImages[i])
             }
         }
+    
+    override func viewWillDisappear(animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController()){
+            Light = "OFF"
+            PauseButtonOutlet.highlighted = true
+            PauseButtonOutlet.enabled = false
+            StartButtonOutlet.highlighted = false
+            StartButtonOutlet.enabled = true
+        }
+    }
+    
     }
 
