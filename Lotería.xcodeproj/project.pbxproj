@@ -103,6 +103,8 @@
 		5DE442871BAE948A00D9A44E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE442851BAE948A00D9A44E /* pause.png */; settings = {ASSET_TAGS = (); }; };
 		5DE442881BAE948A00D9A44E /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE442861BAE948A00D9A44E /* play.png */; settings = {ASSET_TAGS = (); }; };
 		5DE54B7F1BADDD5800689644 /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D8ED83F61BAF83D200223D99 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ED83F51BAF83D200223D99 /* CollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D8ED83F81BAF92C900223D99 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ED83F71BAF92C900223D99 /* CollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,8 @@
 		5DE442851BAE948A00D9A44E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		5DE442861BAE948A00D9A44E /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
+		D8ED83F51BAF83D200223D99 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D8ED83F71BAF92C900223D99 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +330,8 @@
 				5D1C845E1BADAC45009DBC9D /* LaunchScreen.storyboard */,
 				5D1C84611BADAC45009DBC9D /* Info.plist */,
 				5D46CED61BAE048500E6FC10 /* Images */,
+				D8ED83F51BAF83D200223D99 /* CollectionViewController.swift */,
+				D8ED83F71BAF92C900223D99 /* CollectionViewCell.swift */,
 			);
 			path = "Lotería";
 			sourceTree = "<group>";
@@ -640,8 +646,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8ED83F61BAF83D200223D99 /* CollectionViewController.swift in Sources */,
 				5D1C84581BADAC45009DBC9D /* ViewController.swift in Sources */,
 				5DE54B7F1BADDD5800689644 /* VoiceViewController.swift in Sources */,
+				D8ED83F81BAF92C900223D99 /* CollectionViewCell.swift in Sources */,
 				5DBEF2371BAF29BB005DF252 /* CategoriesViewController.swift in Sources */,
 				5D1C84561BADAC45009DBC9D /* AppDelegate.swift in Sources */,
 				5D46CED31BADF2AA00E6FC10 /* PlayerViewController.swift in Sources */,

@@ -70,7 +70,17 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
             }
         }
         else{
-            var anotherNextViewtoPlayer = segue .destinationViewController as! PlayerViewController
+            var anotherNextViewtoPlayer = segue .destinationViewController as! CollectionViewController
+            switch optionCategory{
+            case "Objetos":
+                anotherNextViewtoPlayer.numberOfElements = CategoriesArrayOfImagesObjects.count
+                anotherNextViewtoPlayer.CategoriesArrayOfImages = CategoriesArrayOfImagesObjects
+            case "Colores y Frutas":
+                anotherNextViewtoPlayer.numberOfElements = CategoriesArrayOfImagesFruitsColors.count
+                anotherNextViewtoPlayer.CategoriesArrayOfImages = CategoriesArrayOfImagesFruitsColors
+            default:
+                anotherNextViewtoPlayer.CategoriesArrayOfImages = []
+            }
         }
     }
 }

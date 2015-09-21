@@ -19,7 +19,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-NW-0iR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6u-BQ-HsV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6u-BQ-HsV">
                                 <rect key="frame" x="0.0" y="132" width="600" height="33"/>
                                 <color key="backgroundColor" red="0.94095249368686873" green="0.70507467946960523" blue="0.30655690128763674" alpha="0.22" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -46,7 +46,7 @@
                                     <segue destination="OtK-Uj-2rS" kind="show" identifier="PlayerSegue" id="nBI-t3-f9v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnG-22-8qY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnG-22-8qY">
                                 <rect key="frame" x="0.0" y="89" width="600" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="UTP-4j-YPm"/>
@@ -92,10 +92,10 @@
                                 <exclude reference="CnG-22-8qY"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="55h-NO-yqR"/>
                                 <exclude reference="ukd-b3-jZp"/>
                                 <exclude reference="Py7-eP-p0o"/>
                                 <exclude reference="dQP-80-enR"/>
-                                <exclude reference="55h-NO-yqR"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -104,10 +104,10 @@
                                 <include reference="CnG-22-8qY"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="55h-NO-yqR"/>
                                 <include reference="ukd-b3-jZp"/>
                                 <include reference="Py7-eP-p0o"/>
                                 <include reference="dQP-80-enR"/>
-                                <include reference="55h-NO-yqR"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,7 +129,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="31W-oY-X6j">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="31W-oY-X6j">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -163,7 +163,7 @@
                     <connections>
                         <outlet property="Categories" destination="31W-oY-X6j" id="hEW-P2-HJA"/>
                         <segue destination="2lm-Ec-xQ3" kind="show" identifier="VoiceSegue2" id="xDC-lj-zBa"/>
-                        <segue destination="xyx-wd-aM8" kind="show" identifier="PlayerSegue2" id="atu-Tq-uA3"/>
+                        <segue destination="bkc-Tn-bxY" kind="show" identifier="PlayerSegue2" id="DCz-EL-RN4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBT-c4-zEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,9 +255,61 @@
             </objects>
             <point key="canvasLocation" x="1476" y="1755.75"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="BbQ-Hg-boJ">
+            <objects>
+                <collectionViewController id="bkc-Tn-bxY" customClass="CollectionViewController" customModule="Loteri_a" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g3W-iE-UR4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="56G-rF-6nl">
+                            <size key="itemSize" width="120" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="15"/>
+                            <size key="footerReferenceSize" width="0.0" height="15"/>
+                            <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="haw-cG-5j1" customClass="CollectionViewCell" customModule="Loteri_a" customModuleProvider="target">
+                                <rect key="frame" x="5" y="79" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyU-kC-8mO">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="imageView" destination="XyU-kC-8mO" id="1ve-UO-ymH"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dB7-wO-jKY">
+                            <rect key="frame" x="0.0" y="64" width="600" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4XG-bC-j2c">
+                            <rect key="frame" x="0.0" y="199" width="600" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="bkc-Tn-bxY" id="Ahf-Mz-z6O"/>
+                            <outlet property="delegate" destination="bkc-Tn-bxY" id="5Gu-Uk-nwy"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="abg-tf-Qsc"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5v-TV-fDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="348"/>
+        </scene>
         <!--Player View Controller-->
         <scene sceneID="xd3-3R-6ct">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoX-ZB-OIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xyx-wd-aM8" customClass="PlayerViewController" customModule="Loteri_a" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f2w-PS-4Ih"/>
@@ -269,9 +321,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoX-ZB-OIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2148" y="1059"/>
+            <point key="canvasLocation" x="2238" y="1049"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hI1-J6-9gf">
