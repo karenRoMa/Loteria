@@ -10,6 +10,9 @@ import UIKit
 
 class WinnerViewController: UIViewController {
 
+    @IBOutlet weak var ganasteImage: UIImageView!
+    @IBOutlet weak var volverButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,9 @@ class WinnerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func volverAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

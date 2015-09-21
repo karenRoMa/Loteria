@@ -15,10 +15,11 @@ class CollectionViewController: UICollectionViewController {
     var numberOfElements: Int!
     var CategoriesArrayOfImages: [String]!
     var selected = [Bool]()
+    var cardsRandom = [Int]()
+    var completed: Int = 0;
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -66,9 +67,29 @@ class CollectionViewController: UICollectionViewController {
         
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
-    
+        
+        var isRepeat = true
+        var random = Int(arc4random_uniform(UInt32(numberOfElements)))
+        if (cardsRandom.count == 0){
+            cardsRandom.append(random)
+        }
+        
+        // Verifica repeticion, si ya existe el numero en cardsRandom[] genera otro nuevamente
+        while(isRepeat){
+            isRepeat = false
+            for x in 0...cardsRandom.count-1{
+                if (cardsRandom[x] == random){
+                    //print("repetido \(x)")
+                    isRepeat = true
+                    random = Int(arc4random_uniform(UInt32(numberOfElements)))
+                    break
+                }
+            }
+        }
+        cardsRandom.append(random)
+        
         // Configure the cell
-        let image = UIImage(named: CategoriesArrayOfImages[indexPath.row])
+        let image = UIImage(named: CategoriesArrayOfImages[random])
         if image != nil
         {
             cell.imageView.image = image
@@ -79,25 +100,40 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
     
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath!)
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
     {
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CollectionViewCell
-        print(self.selected[indexPath.row])
+        
         if(self.selected[indexPath.row] == false){
             cell.markView.viewWithTag(0)?.hidden = false
             self.selected[indexPath.row] = true
+            self.completed++;
         }else{
-            print( " \(indexPath) borrar")
             cell.markView.viewWithTag(0)?.hidden = true
             self.selected[indexPath.row] = false
+            self.completed--;
+        }
+        if(self.completed == 12){
+            self.performSegueWithIdentifier("winner", sender: self)
+            for cell in collectionView.visibleCells() as! [CollectionViewCell] {
+                cell.markView.viewWithTag(0)?.hidden = true
+            }
+            
+            for x in 0...self.selected.count-1{
+                self.selected[x] = false
+            }
+            self.completed = 0
         }
         
     }
     
-    override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath!)
+    //func restart(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath){
+      //  let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CollectionViewCell
+        
+    //}
+    
+    override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath)
     {
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CollectionViewCell
-        //cell.markView.viewWithTag(0)?.hidden = true
         
     }
 
