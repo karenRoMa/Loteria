@@ -27,7 +27,6 @@
 		5D0A31561BAF4BB90097DF10 /* Button1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D0A314E1BAF4BB90097DF10 /* Button1.jpg */; settings = {ASSET_TAGS = (); }; };
 		5D0A31571BAF4BB90097DF10 /* Button2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D0A314F1BAF4BB90097DF10 /* Button2.jpg */; settings = {ASSET_TAGS = (); }; };
 		5D0A31581BAF4BB90097DF10 /* LittleIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D0A31501BAF4BB90097DF10 /* LittleIcon.jpg */; settings = {ASSET_TAGS = (); }; };
-		5D0A315A1BAF4BB90097DF10 /* Medal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0A31521BAF4BB90097DF10 /* Medal.png */; settings = {ASSET_TAGS = (); }; };
 		5D0A315B1BAF4BB90097DF10 /* Partes-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0A31531BAF4BB90097DF10 /* Partes-05.png */; settings = {ASSET_TAGS = (); }; };
 		5D1C84561BADAC45009DBC9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C84551BADAC45009DBC9D /* AppDelegate.swift */; };
 		5D1C84581BADAC45009DBC9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C84571BADAC45009DBC9D /* ViewController.swift */; };
@@ -102,9 +101,10 @@
 		5DE442871BAE948A00D9A44E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE442851BAE948A00D9A44E /* pause.png */; settings = {ASSET_TAGS = (); }; };
 		5DE442881BAE948A00D9A44E /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE442861BAE948A00D9A44E /* play.png */; settings = {ASSET_TAGS = (); }; };
 		5DE54B7F1BADDD5800689644 /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D86FA1971BB08C730070E58D /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA1961BB08C730070E58D /* WinnerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D86FA19B1BB08EF40070E58D /* medal.png in Resources */ = {isa = PBXBuildFile; fileRef = D86FA19A1BB08EF40070E58D /* medal.png */; settings = {ASSET_TAGS = (); }; };
 		D8ED83F61BAF83D200223D99 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ED83F51BAF83D200223D99 /* CollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D8ED83F81BAF92C900223D99 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ED83F71BAF92C900223D99 /* CollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		D8ED83FA1BB040D200223D99 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ED83F91BB040D200223D99 /* WinnerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,7 +145,6 @@
 		5D0A314E1BAF4BB90097DF10 /* Button1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button1.jpg; sourceTree = "<group>"; };
 		5D0A314F1BAF4BB90097DF10 /* Button2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button2.jpg; sourceTree = "<group>"; };
 		5D0A31501BAF4BB90097DF10 /* LittleIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LittleIcon.jpg; sourceTree = "<group>"; };
-		5D0A31521BAF4BB90097DF10 /* Medal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medal.png; sourceTree = "<group>"; };
 		5D0A31531BAF4BB90097DF10 /* Partes-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Partes-05.png"; sourceTree = "<group>"; };
 		5D1C84521BADAC45009DBC9D /* Lotería.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lotería.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C84551BADAC45009DBC9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -226,9 +225,10 @@
 		5DE442851BAE948A00D9A44E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		5DE442861BAE948A00D9A44E /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		5DE54B7E1BADDD5800689644 /* VoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
+		D86FA1961BB08C730070E58D /* WinnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
+		D86FA19A1BB08EF40070E58D /* medal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medal.png; sourceTree = "<group>"; };
 		D8ED83F51BAF83D200223D99 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		D8ED83F71BAF92C900223D99 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		D8ED83F91BB040D200223D99 /* WinnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +282,7 @@
 		5D0A314B1BAF4B970097DF10 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D86FA19A1BB08EF40070E58D /* medal.png */,
 				5DE442851BAE948A00D9A44E /* pause.png */,
 				5DE442861BAE948A00D9A44E /* play.png */,
 				5D0A314C1BAF4BB90097DF10 /* Back.jpg */,
@@ -289,7 +290,6 @@
 				5D0A314E1BAF4BB90097DF10 /* Button1.jpg */,
 				5D0A314F1BAF4BB90097DF10 /* Button2.jpg */,
 				5D0A31501BAF4BB90097DF10 /* LittleIcon.jpg */,
-				5D0A31521BAF4BB90097DF10 /* Medal.png */,
 				5D0A31531BAF4BB90097DF10 /* Partes-05.png */,
 			);
 			name = App;
@@ -331,7 +331,7 @@
 				5D46CED61BAE048500E6FC10 /* Images */,
 				D8ED83F51BAF83D200223D99 /* CollectionViewController.swift */,
 				D8ED83F71BAF92C900223D99 /* CollectionViewCell.swift */,
-				D8ED83F91BB040D200223D99 /* WinnerViewController.swift */,
+				D86FA1961BB08C730070E58D /* WinnerViewController.swift */,
 			);
 			path = "Lotería";
 			sourceTree = "<group>";
@@ -537,6 +537,7 @@
 				5DE442601BAE8EE500D9A44E /* hammer.jpg in Resources */,
 				5DE4427A1BAE8EE500D9A44E /* tie.jpg in Resources */,
 				5DE4427F1BAE8EE500D9A44E /* wallet.jpg in Resources */,
+				D86FA19B1BB08EF40070E58D /* medal.png in Resources */,
 				5DE442711BAE8EE500D9A44E /* screen.jpg in Resources */,
 				5DE442541BAE8EE500D9A44E /* couch.jpg in Resources */,
 				5DE4425D1BAE8EE500D9A44E /* gift.jpg in Resources */,
@@ -564,7 +565,6 @@
 				5DE442721BAE8EE500D9A44E /* shirt.jpg in Resources */,
 				5DE442801BAE8EE500D9A44E /* weather.jpg in Resources */,
 				5DE442871BAE948A00D9A44E /* pause.png in Resources */,
-				5D0A315A1BAF4BB90097DF10 /* Medal.png in Resources */,
 				5D0A31411BAF4B890097DF10 /* cherry.jpg in Resources */,
 				5D0A313E1BAF4B890097DF10 /* black.jpg in Resources */,
 				5DE4426F1BAE8EE500D9A44E /* ruler.jpg in Resources */,
@@ -645,6 +645,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86FA1971BB08C730070E58D /* WinnerViewController.swift in Sources */,
 				D8ED83F61BAF83D200223D99 /* CollectionViewController.swift in Sources */,
 				5D1C84581BADAC45009DBC9D /* ViewController.swift in Sources */,
 				5DE54B7F1BADDD5800689644 /* VoiceViewController.swift in Sources */,
@@ -652,7 +653,6 @@
 				5DBEF2371BAF29BB005DF252 /* CategoriesViewController.swift in Sources */,
 				5D1C84561BADAC45009DBC9D /* AppDelegate.swift in Sources */,
 				5D46CED31BADF2AA00E6FC10 /* PlayerViewController.swift in Sources */,
-				D8ED83FA1BB040D200223D99 /* WinnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
