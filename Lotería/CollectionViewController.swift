@@ -14,6 +14,7 @@ class CollectionViewController: UICollectionViewController {
     
     var numberOfElements: Int!
     var CategoriesArrayOfImages: [String]!
+    var selected = [Bool]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,16 +68,37 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
     
         // Configure the cell
-        print(CategoriesArrayOfImages[indexPath.row])
-         let image = UIImage(named: CategoriesArrayOfImages[indexPath.row])
+        let image = UIImage(named: CategoriesArrayOfImages[indexPath.row])
         if image != nil
         {
             cell.imageView.image = image
+            cell.markView.hidden = true
         }
-        
-         //cell.backgroundColor = UIColor.redColor()
+        self.selected.append(false)
         
         return cell
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath!)
+    {
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CollectionViewCell
+        print(self.selected[indexPath.row])
+        if(self.selected[indexPath.row] == false){
+            cell.markView.viewWithTag(0)?.hidden = false
+            self.selected[indexPath.row] = true
+        }else{
+            print( " \(indexPath) borrar")
+            cell.markView.viewWithTag(0)?.hidden = true
+            self.selected[indexPath.row] = false
+        }
+        
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath!)
+    {
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CollectionViewCell
+        //cell.markView.viewWithTag(0)?.hidden = true
+        
     }
 
 

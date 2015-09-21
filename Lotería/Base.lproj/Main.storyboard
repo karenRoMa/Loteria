@@ -279,11 +279,16 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyU-kC-8mO">
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         </imageView>
+                                        <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTM-0V-oJU">
+                                            <rect key="frame" x="8" y="8" width="104" height="104"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
                                     <outlet property="imageView" destination="XyU-kC-8mO" id="1ve-UO-ymH"/>
+                                    <outlet property="markView" destination="bTM-0V-oJU" id="Iea-Dv-NrC"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
