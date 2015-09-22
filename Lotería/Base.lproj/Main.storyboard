@@ -262,7 +262,6 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g3W-iE-UR4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="56G-rF-6nl">
                             <size key="itemSize" width="120" height="120"/>
                             <size key="headerReferenceSize" width="0.0" height="15"/>
@@ -307,63 +306,28 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="abg-tf-Qsc"/>
-                    <connections>
-                        <segue destination="dOl-Pv-Gi8" kind="presentation" identifier="winner" id="uoh-cj-fgt"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5v-TV-fDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2194" y="1059"/>
+            <point key="canvasLocation" x="2148" y="348"/>
         </scene>
-        <!--Winner View Controller-->
-        <scene sceneID="Xho-E2-XFO">
+        <!--Player View Controller-->
+        <scene sceneID="xd3-3R-6ct">
             <objects>
-                <viewController id="dOl-Pv-Gi8" customClass="WinnerViewController" customModule="Loteri_a" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoX-ZB-OIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="xyx-wd-aM8" customClass="PlayerViewController" customModule="Loteri_a" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nAv-sC-rEk"/>
-                        <viewControllerLayoutGuide type="bottom" id="cX5-Zp-OLh"/>
+                        <viewControllerLayoutGuide type="top" id="f2w-PS-4Ih"/>
+                        <viewControllerLayoutGuide type="bottom" id="kuR-zD-Pi9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WZ0-DB-TDR">
+                    <view key="view" contentMode="scaleToFill" id="cn2-Rw-NSf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vk8-6G-ZEs">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="599"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Medal.png" translatesAutoresizingMaskIntoConstraints="NO" id="DxC-EW-IC9">
-                                <rect key="frame" x="175" y="175" width="250" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="0SR-OR-7Io"/>
-                                    <constraint firstAttribute="width" constant="250" id="CoG-a7-x2G"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLe-TT-Gzw">
-                                <rect key="frame" x="233" y="433" width="134" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Volver a Jugar">
-                                    <color key="titleColor" red="0.72156862745098038" green="0.34901960784313724" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="volverAction:" destination="dOl-Pv-Gi8" eventType="touchUpInside" id="eLp-0G-ewz"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="DxC-EW-IC9" firstAttribute="centerX" secondItem="WZ0-DB-TDR" secondAttribute="centerX" id="JnI-lZ-LI8"/>
-                            <constraint firstItem="zLe-TT-Gzw" firstAttribute="top" secondItem="DxC-EW-IC9" secondAttribute="bottom" constant="8" id="Sw8-MG-Q1j"/>
-                            <constraint firstItem="DxC-EW-IC9" firstAttribute="centerY" secondItem="WZ0-DB-TDR" secondAttribute="centerY" id="k1s-kf-uxo"/>
-                            <constraint firstItem="zLe-TT-Gzw" firstAttribute="centerX" secondItem="DxC-EW-IC9" secondAttribute="centerX" id="p1h-Yh-uGg"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="ganasteImage" destination="DxC-EW-IC9" id="dcf-Dc-43I"/>
-                        <outlet property="volverButton" destination="zLe-TT-Gzw" id="GDd-UL-pm1"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ECq-bH-GjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2194" y="283"/>
+            <point key="canvasLocation" x="2238" y="1049"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hI1-J6-9gf">
@@ -389,7 +353,6 @@
         <image name="Back1.jpg" width="3125" height="5558"/>
         <image name="Button1.jpg" width="2275" height="601"/>
         <image name="Button2.jpg" width="2275" height="597"/>
-        <image name="Medal.png" width="1742" height="1209"/>
         <image name="pause.png" width="64" height="64"/>
         <image name="play.png" width="64" height="64"/>
     </resources>
